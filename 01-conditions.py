@@ -52,31 +52,3 @@ if user_name == 'mohamed' and password == 12345 :
 if user_name == 'mohamed' or password == 1234567 :
     print('welcome or')
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
