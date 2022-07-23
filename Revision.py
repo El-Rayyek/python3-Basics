@@ -58,12 +58,31 @@ Choose one of our Game
             print("---------------------")
         
     def Remove_Dupli(self):
-        lst = list()
-        inn = input("Enter the word :")
-        for x in inn:
-            if not x in lst:
-                print(x ,end = '')
-                lst.append(x)
+        
+        numbers_lst = list()
+        even_lst    = list()
+        odd_lst     = list()
+
+        print("Press 'x' to EXIT and show the list")
+        print("Enter your numbers:")
+        while True:
+            
+                        
+            inn = input("")
+            if inn == 'x': break
+            numbers_lst.append(int(inn))
+
+                        
+            for x in numbers_lst:
+                
+                if x % 2 == 0:
+                    even_lst.append(x)
+                else:
+                        odd_lst.append(x)
+
+            print("The Even List is :",even_lst)
+            print("The Odd List is  :",odd_lst)
+
 
 
 g = Game()
